@@ -1,7 +1,16 @@
 {
-  "name": "dra_ui",
+  "name": "ui-seed",
   "version": "0.0.1",
-  "description": "DRA UI",
+  "description": "UI Seed",
+  "author": "Luis Cielak",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luiscielak/ui-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luiscielak/ui-seed/issues"
+  },
+  "license": "ISC",
   "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "^0.4.5",
@@ -15,11 +24,8 @@
     "grunt-concurrent": "^2.0.3",
     "load-grunt-tasks": "^3.3.0",
     "grunt-reload": "latest"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Luis Cielak",
-  "license": "ISC"
-}
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    }
+  }
