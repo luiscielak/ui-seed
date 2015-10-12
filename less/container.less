@@ -1,0 +1,68 @@
+// Container
+// ==========================
+
+.color-elements {
+  font-family: @base-font-family;
+  span {
+    color: @white;
+    display: inline-block;
+    text-align: center;
+    height: 6rem;
+    min-width: 15rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 400;
+  }
+}
+
+// Card Containers
+// --------------------------
+
+.card-container {
+  box-sizing: border-box;
+  background-color: @primary-color;
+  min-height: 36rem;
+  overflow: hidden;
+  display: block;
+  border-right: 1px solid @gray-lightest;
+  border-top: 1px solid @gray-lightest;
+  text-align: center;
+
+
+  h6 {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  p {
+    margin-bottom: 4rem;
+    text-align: left;
+  }
+
+  img {
+    padding-top: 1.5rem;
+  }
+
+  .btn {                // NOTE: fix this absolute position hack. instad add an .actions-container div to wrap buttons.
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.card-container:nth-child(1) {
+  border-left: 1px solid @gray-lightest;
+}
+
+
+.card-container-alt {
+  background-color: @white;
+  min-height: 16rem;
+  margin-bottom: 2rem;
+  border: 0.5rem solid @gray-light;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: block;
+}

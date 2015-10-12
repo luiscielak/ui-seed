@@ -1,6 +1,14 @@
 // Theme - default
 // ==========================
 
+
+// Colors
+// -------------------------
+
+@primary-color:       @brand-primary;
+@secondary-color:     @brand-secondary;
+
+
 // Base
 // -------------------------
 
@@ -29,65 +37,158 @@ h3 {
 h4 {
   font-size: @h4;
   line-height: 3.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  letter-spacing: 0.02rem;
+  padding-top: 1.75rem;
+  padding-bottom: 0.25rem;
 }
 
 h5 {
   font-size: @h5;
   line-height: 3rem;
+  color: @secondary-color;
+  font-weight: 200;
+  line-height: 2.70rem;
+  letter-spacing: 0.05rem;
+  padding-top: 0.25rem;
 }
 
 h6 {
   font-size: @h6;
   line-height: 2.5rem;
+  color: @gray-darker;
+  padding-top: 1.75rem;
+  margin-bottom: 0.25rem;
 }
 
 ul {
   list-style-type: none;
 }
 
-
 a {
   text-decoration: none;
   color: @secondary-color;
 }
 
+p {
+  color: @gray-light;
+  font-weight: 300;
+}
 
-// Colors
-@primary-color:       @brand-primary;
-@secondary-color:     @brand-secondary;
-
-
-// // Base
-// h4 {
-//   color: @secondary-color;
-//   font-weight: 300;
-//   line-height: 2.5rem;
-//   letter-spacing: 0.02rem;
-//   padding-top: 1.75rem;
-//   padding-bottom: 0.25rem;
-// }
-
-// h5 {
-//   color: @secondary-color;
-//   font-weight: 200;
-//   line-height: 2.70rem;
-//   letter-spacing: 0.05rem;
-//   padding-top: 0.25rem;
-// }
+footer {
+  border-top: 1px solid @gray-lighter;
+}
 
 
-// h6 {
-//   color: @gray-darker;
-//   padding-top: 1.75rem;
-//   margin-bottom: 0.25rem;
-// }
+// UI Directives
+// --------------------------
 
-// p {
-//   color: @gray-light;
-//   font-weight: 300;
-// }
+.ui-images {
+  img {
+    border: 1px solid @gray-lighter;
+    margin-right: 4rem;
+  }
+}
+
+.ui-icons {
+  i {
+    margin-right: 2rem;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    padding-top: 3rem;
+  }
+
+  code {
+    font-size: 1rem;
+  }
+}
 
 
-// footer {
-//   border-top: 1px solid @gray-lighter;
-// }
+// Intro Elements
+// --------------------------
+
+.intro-text-container {
+  background-color: fade(@brand-secondary,12%);
+  margin-top: 4rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.intro-text {
+  font-size: @h4;
+  color: @primary-color;
+  font-weight: 200;
+  line-height: 3.5rem;
+  letter-spacing: 0.1rem;
+  display: block;
+  margin-bottom: 2rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+// Sitemap
+// --------------------------
+
+.sitemap {
+  a {
+    color: @gray-light;
+    font-weight: 300;
+  }
+
+  a:hover {
+    color: @secondary-color;
+    transition: 0.5s;
+  }
+
+  a:focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  li {
+    color: @gray-light;
+    line-height: 2.4rem;
+    font-size: 1.5rem;
+    cursor: default;
+  }
+}
+
+
+// Copyright
+// --------------------------
+.copyright {
+  padding-left: 1rem;
+  padding-top: 3rem;
+  opacity: 0.9;
+  p {
+    line-height: 3rem;
+  }
+  @media screen and (max-width: @sm-max) {
+    .row {
+      div {
+        text-align: center;
+        p {
+          text-align: center;
+          &.pull-right {
+            float: none !important;
+          }
+        }
+        img {
+          &.pull-left {
+            float: none !important;
+          }
+        }
+        &:nth-child(2) {
+          p {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}
