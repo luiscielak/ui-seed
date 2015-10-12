@@ -1,0 +1,106 @@
+// Variables
+// ==========================
+
+// Colors
+// Brand
+@brand-primary:   #cc0000;
+@brand-secondary: #333333;
+@brand-accent:    #f26d37;
+
+@link-active:     #f69639;
+@link-visited:    #cd661d;
+
+// Grays
+@black:         #101010;
+@gray-darker:   #434a54;
+@gray-dark:     #656d78;
+@gray:          #555555;
+@gray-light:    #999999;
+@gray-lighter:  #dadada;
+@gray-lightest: #eeeeee;
+@white:         #ffffff;
+
+// Alerts
+@red:           #ed5565;
+@red-dark:      #da4453;
+@orange:        #ff9933;
+@yellow-light:  #ffffe0;
+@yellow:        #ffce54;
+@yellow-dark:   #f6bb42;
+@nav-orange:    #F59331;
+
+
+// Typography
+@base-font-family:  "Open Sans", sans-serif;
+@base-font-size:    1rem;
+@base-line-height:  1.431rem;
+
+
+// Font-sizes
+@h1: @base-font-size * 4.429;
+@h2: @base-font-size * 3.714;
+@h3: @base-font-size * 2.857;
+@h4: @base-font-size * 2.271;
+@h5: @base-font-size * 1.6;
+@h6: @base-font-size * 1.15;
+
+
+
+
+// Headings
+// @section-heading:     28px @heading-font, sans-serif;
+// @section-subheading:  24px @heading-font, sans-serif;
+// @block-heading:       20px @heading-font, sans-serif;
+
+
+
+// @text-color:          @gray-dark;
+
+// @black:           #000000;
+
+
+// Links
+// @link-color:      @brand-accent;
+// @link-hover:      @link-active;
+// @link-active:     @link-active;
+// @link-visited:    @link-visited;
+
+//button
+// @button-text: capitalize;
+// @button-font: normal 12px "Open Sans", sans-serif;
+// @button-border-radius: .5rem;
+// @button-color: @gray;
+// @button-border: 1px solid @medium-gray;
+// @button-bg: @light-gray;
+// @button-bg-hover: @gray-lighter;
+// @button-fg-hover: @white;
+// @button-preview-color: @medium-blue;
+
+//backgrounds
+// @container-bgd: @light-gray;
+
+//paths
+// @images-path: "../img" ;
+
+
+
+// Responsive settings
+@xs-min: 320px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (min-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+
+@small-phone: ~"only screen and (max-width: 600px)";
+

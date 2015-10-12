@@ -1,0 +1,11 @@
+// Mixins
+// ==========================
+
+.gradient (@startColor: gray, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left, right bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(left, @startColor, @endColor);
+  background: -moz-linear-gradient(left, @startColor, @endColor);
+  background: -ms-linear-gradient(left, @startColor, @endColor);
+  background: -o-linear-gradient(left, @startColor, @endColor);
+}

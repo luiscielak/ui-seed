@@ -1,0 +1,393 @@
+// Main
+// ==========================
+
+// Base
+// Variables, mixins, reset, typography, atmosphere, site-wide
+@import "variables";
+@import "mixins";
+@import 'reset';
+@import "colors";
+@import "typography";
+
+// Themes
+@import "theme";
+
+// Components
+// Individual components, buttons, fields
+// @import "grid";
+@import "header";
+// @import "footer";
+// @import "buttons";
+
+// Modules
+// @import "modules"; // Individual modules, forms, containers
+// @import "navigation";
+// @import "login";
+// @import "portal";
+// @import "settings";
+
+
+
+// - - -
+
+
+
+
+// .fa-spin-hover:hover {
+//   -webkit-animation: fa-spin 2s infinite linear;
+//   -moz-animation: fa-spin 2s infinite linear;
+//   -o-animation: fa-spin 2s infinite linear;
+//   animation: fa-spin 2s infinite linear;
+// }
+
+// .settings-cog, .fa-home {
+//   color: @brand-accent;
+// }
+
+// .right-header-btn {
+//   .btn {
+//     margin-top: 8px;
+//   }
+// }
+
+
+// .body-container {
+//   @media screen and (min-width: @sm-min) {
+//     min-height: 600px;
+//   }
+// }
+
+
+
+//F6A14B
+// @green-on:      #9f6;
+// @green:         #a0d468;
+// @green-dark:    #8cc152;
+
+// Accent
+// @blue:          #5d9cec;
+// @blue-dark:     #4a89dc;
+
+
+
+// UI Styleguide
+// -------------------------
+
+// Layout
+
+// .section-content {
+//   margin-bottom: 4rem;
+//   padding-bottom: 2rem;
+// }
+
+// .section-title {
+//   font-family: @base-font-family;
+//   font-size: @h4;
+//   color: @gray;
+//   border-bottom: 1px solid @gray-light;
+//   padding-bottom: 0.25rem;
+//   display: block;
+// }
+
+// .section-subtitle {
+//   font-family: @base-font-family;
+//   font-size: 1.4rem;
+//   text-transform: uppercase;
+//   display: block;
+//   margin-top: 2rem;
+//   margin-left: 1rem;
+//   color: @gray-light;
+// }
+
+// // UI - Colors
+
+// .color-elements {
+//   font-family: @base-font-family;
+//   span {
+//     color: @white;
+//     display: inline-block;
+//     text-align: center;
+//     height: 6rem;
+//     min-width: 15rem;
+//     padding: 2rem;
+//     margin: 1rem;
+//     border-radius: 0.75rem;
+//     font-weight: 400;
+//   }
+// }
+
+
+// .navbar-brand {
+//   img {
+//     max-height: 2.5rem;
+//   }
+// }
+
+
+// NOTE: this is only used in ui.html to represent color containers, this should be implemented better
+// .color-brand-primary { background-color: @brand-primary; }
+// .color-brand-secondary { background-color: @brand-secondary; color: @gray-light !important;}
+// .color-brand-accent { background-color: @brand-accent; }
+// .color-bv-gray-01 { background-color: @bv-gray-01; color: @gray !important; }
+// .color-bv-gray-08 { background-color: @bv-gray-08;}
+
+// .color-black { background-color: @black; }
+// .color-gray-darker { background-color: @gray-darker; }
+// .color-gray-dark { background-color: @gray-dark; }
+// .color-gray { background-color: @gray; }
+// .color-gray-light { background-color: @gray-light; }
+// .color-gray-lighter { background-color: @gray-lighter; color: @gray-light !important;}
+// .color-gray-lightest { background-color: @gray-lightest; color: @gray-light !important;}
+// .color-white { background-color: @white; color: @gray-light !important;}
+
+// .color-red { background-color: @red; }
+// .color-orange { background-color: @orange; }
+// .color-yellow { background-color: @yellow; }
+// .color-green { background-color: @green; }
+
+
+// UI - Images
+// .ui-images {
+//   img {
+//     border: 1px solid @gray-lighter;
+//     margin-right: 4rem;
+//   }
+// }
+
+
+// // UI - Icons
+
+// .ui-icons {
+//   i {
+//     margin-right: 2rem;
+//     font-size: 3rem;
+//     padding-bottom: 0.5rem;
+//     padding-top: 3rem;
+//   }
+
+//   code {
+//     font-size: 1rem;
+//   }
+// }
+
+
+// // UI - Card Containers
+
+// .card-container {
+//   box-sizing: border-box;
+//   background-color: @primary-color;
+//   min-height: 36rem;
+//   overflow: hidden;
+//   display: block;
+//   border-right: 1px solid @gray-lightest;
+//   border-top: 1px solid @gray-lightest;
+//   text-align: center;
+
+
+//   h6 {
+//     text-align: center;
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//   }
+
+//   p {
+//     margin-bottom: 4rem;
+//     text-align: left;
+//   }
+
+//   img {
+//     padding-top: 1.5rem;
+//   }
+
+//   .btn {                // NOTE: fix this absolute position hack. instad add an .actions-container div to wrap buttons.
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//   }
+// }
+
+// .card-container:nth-child(1) {
+//   // border-left: 1px solid @gray-lightest;
+// }
+
+// .card-container-alt {
+//   background-color: @white;
+//   min-height: 16rem;
+//   margin-bottom: 2rem;
+//   border: 0.5rem solid @light-gray;
+//   border-radius: 1rem;
+//   overflow: hidden;
+//   display: block;
+// }
+
+// // UI - Buttons
+
+// .btn {
+//   font-family: @secondary-font-family;
+//   color: @gray-dark;
+// }
+
+// // buttons: Primary
+// .btn-primary {
+//   font-weight: 600;
+//   background-color: @primary-color;
+//   border-color: @primary-color;
+//   color: @brand-accent;
+// }
+
+// .btn-primary:hover {
+//   background-color: @brand-accent;
+//   border-color: @brand-accent;
+// }
+
+// .btn-primary:active {
+//   background-color: darken(@brand-accent,4%);
+//   border-color: @brand-accent;
+// }
+
+// .btn-primary:focus {
+//   color: @primary-color;
+//   background-color: darken(@brand-accent,4%);
+//   border-color: @brand-accent;
+//   outline: none;
+// }
+
+// // buttons: Secondary
+// .btn-secondary {
+//   color: @brand-accent;
+// }
+
+// .btn-secondary:hover {
+//   color: lighten(@brand-accent, 10%)
+// }
+
+// .btn-secondary:active {
+//   box-shadow: none;
+//   color: darken(@brand-accent, 10%)
+
+// }
+
+
+// // buttons: Link
+// .btn-link {
+//   font-weight: 700;
+//   font-size: 12px;
+//   color: @primary-color;
+//   letter-spacing: 0.56px;
+//   line-height: 17px;
+//   text-transform: uppercase;
+// }
+
+// .btn-link:hover,
+// .btn-link:focus {
+//   text-decoration: none;
+//   background-color: darken(@secondary-color,10%);
+//   color: @primary-color;
+//   border-radius: 0.5rem;
+//   outline: none;
+// }
+
+
+// // UI - Blocks
+
+
+// // Home
+
+// .hero-panel-home {
+//   .gradient(lighten(@secondary-color,2%),darken(@secondary-color,10%));
+//   background-color: darken(@secondary-color,10%);
+//   min-height: @hero-panel-height*0.65;
+
+//   .btn {
+//     margin-top: 1rem;
+//     margin-bottom: 0.75rem;
+//     min-width: 172px;
+//   }
+// }
+
+// .intro-text-container {
+//   background-color: fade(@brand-secondary,12%);
+//   margin-top: 4rem;
+//   text-align: center;
+//   border-radius: 0.25rem;
+//   padding-top: 2rem;
+//   padding-bottom: 2rem;
+// }
+
+// .intro-text {
+//   font-size: @h4;
+//   color: @primary-color;
+//   font-weight: 200;
+//   line-height: 3.5rem;
+//   letter-spacing: 0.1rem;
+//   display: block;
+//   margin-bottom: 2rem;
+//   margin-left: 8rem;
+//   margin-right: 8rem;
+// }
+
+
+// // Sitemap
+// .sitemap {
+
+//   a {
+//     color: @gray-light;
+//     font-weight: 300;
+//   }
+
+//   a:hover {
+//     color: @secondary-color;
+//     transition: 0.5s;
+//   }
+
+//   a:focus {
+//     outline: none;
+//     text-decoration: none;
+//   }
+
+//   li {
+//     color: @gray-light;
+//     line-height: 2.4rem;
+//     font-size: 1.5rem;
+//     cursor: default;
+//   }
+// }
+
+
+// // Copyright
+// .copyright {
+//   padding-left: 1rem;
+//   padding-top: 3rem;
+//   opacity: 0.9;
+//   p {
+//     line-height: 3rem;
+//   }
+//   @media screen and (max-width: @sm-max) {
+//     .row {
+//       div {
+//         text-align: center;
+//         p {
+//           text-align: center;
+//           &.pull-right {
+//             float: none !important;
+//           }
+//         }
+//         img {
+//           &.pull-left {
+//             float: none !important;
+//           }
+//         }
+//         &:nth-child(2) {
+//           p {
+//             padding-bottom: 0;
+//             margin-bottom: 0;
+//             margin-top: 8px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
