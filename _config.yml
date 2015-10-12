@@ -1,0 +1,6 @@
+port:  5000
+encoding: utf-8
+
+keep_files: ['_site/css']
+
+gems: ['jekyll-less']
