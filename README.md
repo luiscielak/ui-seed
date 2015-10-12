@@ -6,6 +6,6 @@ ui-seed
 ## Quick start
 
 * Install [Jekyll](https://jekyllrb.com/): `gem install jekyll`
-* Start the server: `jekyll serve`
+* Start the server: `grunt`
 * Open your browswer and hit [http://localhost:5000](http://localhost:5000)
 
