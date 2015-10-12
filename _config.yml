@@ -4,3 +4,9 @@ encoding: utf-8
 keep_files: ['_site/css']
 
 gems: ['jekyll-less']
+
+collections:
+  components:
+    output: true
+  colors:
+    output: false

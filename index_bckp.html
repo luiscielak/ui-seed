@@ -1,23 +1,25 @@
 ---
-layout: default
 ---
 
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="/css/main.css">
-  <title>Default Title</title>
+  <title>Title</title>
 </head>
 <body>
   <header>
     {% include header.html %}
   </header>
   <div class="container">
+    {% for post in site.posts %}
     <article>
-      <h1><a href="{{ site.base_url }}{{ page.url }}">{{ page.title }}</a></h1>
-      <p>{{ page.date | date_to_string }}</p>
-      <p>{{ content }}</p>
+      <h1><a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>{{ post.date | date_to_string }}</p>
+      <!-- <p>{{ post.content }}</p> -->
     </article>
+    {% endfor %}
   </div>
   <footer>
     {% include footer.html %}
