@@ -1,0 +1,7 @@
+<div class="container">
+  {% for component in site.components %}
+  <article>
+    <h1><a href="{{ site.base_url }}{{ component.url }}">{{ component.title }}</a></h1>
+  </article>
+  {% endfor %}
+</div>
